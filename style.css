@@ -1,0 +1,158 @@
+body { /*corpo da página*/
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif; /*Mudar a fonte de texto*/
+    display:flex;
+    justify-content: center;
+}
+
+#principal {
+    width: 1280px; /* largura */
+    /*border: 2px solid black; /* cria uma borrda */
+
+}
+
+header {
+    height: 143px;  
+    background-image: url("../img/bck-fundo.jpg") ; /*Coloca imagem no site e ".." sai da página css*/
+    background-repeat: no-repeat; /*Esse código serve para prevenir que a imagem fique se repetindo*/
+    background-size: cover; /*Ordena que a imagem do background cubra o espaço definido do "header"*/
+    background-position:right; /*Força a imagem a ir para o lado escolhido*/    
+display:flex; /*É utilizado para transformar um elemento em um "flex container", permitindo organizar seus filhos (flex itens) de forma flexível e responsiva */
+    justify-content: flex-start; /*Alinhamento no eixo principal (X) */
+    align-items:center /*Alinhamento no eixo transversal (Y)*/
+
+}
+
+header img { /*Imagem presente dentro do header, usar apenas quando houver uma imagem*/
+    margin: 0px 12px;
+}
+
+#imagem {
+    width: 104px;
+}
+
+h2 {
+    font-size: 28px; /*Tamanho da fonte*/
+    font-weight: bold; /*(Desenho da fonte) Negrito, itálico, sublinhado*/ 
+}
+
+nav {
+    width :700px;
+    margin-left: 104px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none; /* Remover as bolinhas*/
+    justify-content: space-between; /*Deixa o conteúdo espaçado, apenas dentro do espaço selecionado*/
+    justify-content: space-around; /*Organizar conteúdo da UL (Lista Não Ordenada) Porém, vai espaçar tudo*/
+    
+
+}
+
+ul li a {
+    color: black;
+    text-decoration: none; /*Vai tirar o estilo "Link" do cabeçalho*/
+    font-size: 18px;
+    background-color:aquamarine;
+    padding: 8px 16px; /*Cria uma caixa de mensagem para espaçar elas do texto*/
+    border-radius: 15px; /*Arredonda as bordas*/
+
+}
+
+ul li a:hover {
+    background-color: purple;
+    color: white;
+    text-decoration: underline;
+
+}
+
+section {
+    background-color: rgb(216, 146, 251);
+    display: flex;
+    /*margin: 15px 0px;*/
+    border-top: 12px solid white;
+    border-bottom: 12px solid white; 
+    padding: 20px   ;
+
+
+}
+
+#Secundaria {
+    width: 900px;
+    
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+}
+
+#textos {
+    margin-left: 18px;
+
+}
+
+h3 {
+    font-weight: bold;
+    text-transform: uppercase; /* Coloca o texto em caixa alta */
+}
+
+#Azulzinho {
+    width: 880px;
+    background-color: cyan  ;
+    display: flex;
+    padding: 10px; /*Dimuir a largura conforme o padding / padding + padding -> widht - padding = nova largura*/
+   
+}
+
+aside {
+    background-color: rebeccapurple;
+    display: flex; /* Quero organizar/alinhar/colocar um do lado do outro display: flex*/
+    flex-direction: column ; /*Define a direção desse alinhamento*/
+    justify-content: space-between;
+    align-items:center;
+    margin-left: 15px
+}
+
+h4 {
+    color: white;
+    text-transform: uppercase;
+
+}
+
+aside p {
+    color: white;
+    text-align: center; /*Alinha o texto*/
+    margin: 0px 18px;
+    line-height: 22px; /*Altura da linha*/  
+    font-weight: bold;
+}
+
+aside a { 
+    
+color: black;
+text-decoration: none; /*Vai tirar o estilo "Link" do cabeçalho*/
+font-size: 18px;
+background-color:aquamarine;
+padding: 8px 16px; /*Cria uma caixa de mensagem para espaçar elas do texto*/
+border-radius: 15px; /*Arredonda as bordas*/
+margin-bottom: 20px; /*Define o lado que quer a margem (top, right, left, bottom) */
+font-weight: bold;
+}
+
+aside a:hover {
+    background-color: purple;
+    color: white;
+    text-decoration: underline;
+    
+
+}
+
+footer {
+    background-color: lightseagreen;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
